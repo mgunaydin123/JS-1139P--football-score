@@ -2,6 +2,15 @@ function skorDegistir(takim, degisim) {
     const skorElement = document.getElementById(`takim-${takim}-skor`);
     let skor = Math.max(0, parseInt(skorElement.textContent) + degisim);
     skorElement.textContent = skor;
+    if (takim === 'a') {
+        const goalYazisi = document.getElementById('goal-yazisi');
+        goalYazisi.style.display = 'block';
+
+      
+        setTimeout(() => {
+            goalYazisi.style.display = 'none';
+        }, 2000);
+    }
 }
 
 function skorAtama(takim) {
