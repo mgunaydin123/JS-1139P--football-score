@@ -47,7 +47,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
-    background-color: transparent; /* Arka plan rengini şeffaf yaptık */
+    background-color: transparent; 
 }
 
 .takim:last-child:hover {
