@@ -1,39 +1,68 @@
 body {
     margin: 0;
-    padding: 20px 20px 0; 
-    background-color: #009d00;
+    padding: 0;
+    background-image: url('stad.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: Arial, sans-serif;
     min-height: 100vh;
-    display: flex; 
-    flex-direction: column; /* İçerik dikey olarak sıralanır */
+    display: flex;
+    flex-direction: column;
+    background-size: 100% 100%;
 }
 
 .saha {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 90vh; 
-    border: 2px solid white;
+    height: 90vh;
     border-radius: 15px;
     position: relative;
 }
 
-.takim {
-    background: #fff;
+.takim:first-child {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    background-image: url('gs.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: transform 0.3s ease;
+    background-color: transparent; 
+}
+
+.takim:first-child:hover {
+    transform: scale(1.05);
+}
+
+.takim:last-child {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: url('fb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    background-color: transparent; /* Arka plan rengini şeffaf yaptık */
+}
+
+.takim:last-child:hover {
+    transform: scale(1.05);
 }
 
 .takim-isim {
-    font-size: 24px;
+    font-size: 50px;
     margin-bottom: 15px;
+    color: #062c04;
 }
 
 .skor {
     font-size: 100px;
-    color: #009d00;
+    color: #115213;
     margin: 20px 0;
 }
 
@@ -45,13 +74,17 @@ body {
 
 button {
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
+
+
+
 .skor-buton {
-    background-color: #4CAF50;
+    background-color: #115213;
     color: white;
 }
 
@@ -67,25 +100,3 @@ button {
 .belirle-buton:hover {
     background-color: #0288d1;
 }
-
-
-.merkez {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 2px solid white;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.merkez::after {
-    content: "⚽";
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
