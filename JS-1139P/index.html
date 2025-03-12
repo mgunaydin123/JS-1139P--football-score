@@ -10,33 +10,34 @@
         <!-- Takım A -->
         <div class="takim">
             <div class="takim-isim">
-                <span id="takim-a-isim">Takım A</span>
-                <button onclick="takimIsmiDegistir('a')">✏️</button>
+                <span id="takim-a-isim">Team A</span>
+                <button onclick="takimIsmiDegistir('a')" style="background-color: transparent;">✏️</button>
             </div>
             <div class="skor" id="takim-a-skor">0</div>
             <div class="kontroller">
                 <button class="skor-buton" onclick="skorDegistir('a', -1)">➖</button>
                 <button class="skor-buton" onclick="skorDegistir('a', +1)">➕</button>
-                <button class="belirle-buton" onclick="skorAtama('a')">🎯 Belirle</button>
+                <button class="belirle-buton" onclick="skorAtama('a')">🎯 Target</button>
             </div>
         </div>
 
-        <div class="merkez"></div>
+        <div id="goal-yazisi" style="position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); font-size: 80px; color: rgb(208, 238, 38); display: none;">GOALLL!</div>
 
         <!-- Takım B -->
         <div class="takim">
             <div class="takim-isim">
-                <span id="takim-b-isim">Takım B</span>
-                <button onclick="takimIsmiDegistir('b')">✏️</button>
+                <span id="takim-b-isim">Team B</span>
+                <button onclick="takimIsmiDegistir('b')" style="background-color: transparent;">✏️</button>
             </div>
             <div class="skor" id="takim-b-skor">0</div>
             <div class="kontroller">
                 <button class="skor-buton" onclick="skorDegistir('b', -1)">➖</button>
                 <button class="skor-buton" onclick="skorDegistir('b', +1)">➕</button>
-                <button class="belirle-buton" onclick="skorAtama('b')">🎯 Belirle</button>
+                <button class="belirle-buton" onclick="skorAtama('b')">🎯 Target</button>
             </div>
         </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
