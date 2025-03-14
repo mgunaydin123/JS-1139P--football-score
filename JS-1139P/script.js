@@ -30,7 +30,12 @@ function takimIsmiDegistir(takim) {
         document.getElementById(`takim-${takim}-isim`).textContent = yeniIsim;
     }
 }
-
+function sifirla() {
+    document.getElementById('takim-a-skor').textContent = '0';
+    document.getElementById('takim-b-skor').textContent = '0';
+    document.getElementById('takim-a-isim').textContent = 'Takım A';
+    document.getElementById('takim-b-isim').textContent = 'Takım B';
+}
 
 
 
