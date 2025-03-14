@@ -2,7 +2,7 @@ function skorDegistir(takim, degisim) {
     const skorElement = document.getElementById(`takim-${takim}-skor`);
     let skor = Math.max(0, parseInt(skorElement.textContent) + degisim);
     skorElement.textContent = skor;
-    if (takim === 'a') {
+    if (takim === 'a'  && degisim >0) {
         const goalYazisi = document.getElementById('goal-yazisi');
         goalYazisi.style.display = 'block';
 
